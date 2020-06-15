@@ -1,27 +1,32 @@
 'use strict'
 
-
 var seattle ={
     Location : 'Seattle',
     minHourlyCustomers : 23,
     maxHourlyCustomers: 65,
     averageCookiesPerCustomer : 6.3,
-     cusPerHour: function(){       
-     var randomNum=generateRandomCust(this.minHourlyCustomers,this.maxHourlyCustomers);
+    cusPerHour: function(){       
+    var randomNum=generateRandomCust(this.minHourlyCustomers,this.maxHourlyCustomers);
      return randomNum;  
      console.log(this.randomNum);
         },
-
+    
     cookies : [],
     cookiesForHour: function(){
            
-           for(var i=0; i<15;i++){
-          this.cookies.push(  Math.floor(this.cusPerHour()*this.averageCookiesPerCustomer));
+        for(var i=0; i<15;i++){
+        this.cookies.push(  Math.floor(this.cusPerHour()*this.averageCookiesPerCustomer));
             
-            }
-         // console.log('this is inside'+this.cookies);
-        },
-       
+        }
+    },
+    Total: 0,
+    sumTotal:function(){
+        for(var i=0; i<15;i++){
+            this.Total=this.Total+this.cookies[i];
+                
+        }
+
+       },
        
     render : function(){
         var parentElement =document.getElementById('Sales');
@@ -52,7 +57,11 @@ var seattle ={
             ul.appendChild(li);    
               }
             //console.log(li.textContent)
-         }
+         };
+        var li=document.createElement('li');
+        li.textContent='Total : '+this.Total;
+        ul.appendChild(li);
+
        }         
                  
     }
@@ -78,7 +87,10 @@ var Tokyo ={
                 }
              // console.log('this is inside'+this.cookies);
         },
-           
+    Total: 0,
+    sumTotal:function(){
+            for(var i=0; i<15;i++){
+                this.Total=this.Total+this.cookies[i];}} ,      
            
     render : function(){
         var parentElement =document.getElementById('Sales');
@@ -110,6 +122,9 @@ var Tokyo ={
                   }
                 //console.log(li.textContent)
              }
+             var li=document.createElement('li');
+        li.textContent='Total : '+this.Total;
+        ul.appendChild(li);
            }         
                      
 } 
@@ -136,7 +151,10 @@ var Dubi ={
                 }
              // console.log('this is inside'+this.cookies);
         },
-           
+        Total: 0,
+        sumTotal:function(){
+            for(var i=0; i<15;i++){
+                this.Total=this.Total+this.cookies[i];}  },     
            
     render : function(){
         var parentElement =document.getElementById('Sales');
@@ -168,9 +186,12 @@ var Dubi ={
                   }
                 //console.log(li.textContent)
              }
+             var li=document.createElement('li');
+        li.textContent='Total : '+this.Total;
+        ul.appendChild(li);
            }         
                      
-} 
+} ;
 
 var Paris ={
     Location : 'Paris',
@@ -192,7 +213,10 @@ var Paris ={
             }
          // console.log('this is inside'+this.cookies);
         },
-       
+        Total :0,
+        sumTotal:function(){
+            for(var i=0; i<15;i++){
+                this.Total=this.Total+this.cookies[i];}  },
        
     render : function(){
         var parentElement =document.getElementById('Sales');
@@ -224,6 +248,9 @@ var Paris ={
               }
             //console.log(li.textContent)
          }
+         var li=document.createElement('li');
+        li.textContent='Total : '+this.Total;
+        ul.appendChild(li);
        }         
                  
     }
@@ -249,7 +276,10 @@ var Lima ={
                 }
              // console.log('this is inside'+this.cookies);
         },
-           
+        Total :0,
+        sumTotal:function(){
+            for(var i=0; i<15;i++){
+                this.Total=this.Total+this.cookies[i];}  },       
            
     render : function(){
         var parentElement =document.getElementById('Sales');
@@ -281,6 +311,9 @@ var Lima ={
                   }
                 //console.log(li.textContent)
              }
+             var li=document.createElement('li');
+        li.textContent='Total : '+this.Total;
+        ul.appendChild(li);
            }         
                      
 } 
@@ -294,6 +327,7 @@ var Lima ={
 
 seattle.cusPerHour();
 seattle.cookiesForHour();
+seattle.sumTotal();
 seattle.render();
 //console.log(seattle);
 
@@ -301,6 +335,7 @@ seattle.render();
 
 Tokyo.cusPerHour();
 Tokyo.cookiesForHour();
+Tokyo.sumTotal();
 Tokyo.render();
 //console.log(Tokyo);
 
@@ -308,6 +343,7 @@ Tokyo.render();
 
 Paris.cusPerHour();
 Paris.cookiesForHour();
+Paris.sumTotal();
 Paris.render();
 //console.log(Paris);
 
@@ -315,6 +351,7 @@ Paris.render();
 
 Dubi.cusPerHour();
 Dubi.cookiesForHour();
+Dubi.sumTotal();
 Dubi.render();
 //console.log(Dubi);
 
@@ -322,6 +359,7 @@ Dubi.render();
 
 Lima.cusPerHour();
 Lima.cookiesForHour();
+Lima.sumTotal();
 Lima.render();
 //console.log(Lima);
 
