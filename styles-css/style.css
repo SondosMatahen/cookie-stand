@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(235, 188, 155);
+}
+
+h1{
+    color: rgb(185, 14, 48);
+    position: relative;
+    left: 600px;
+}
+img{
+    width: 1000px;
+    height: 300px;
+   align-content: center;
+
+}
+a {
+    text-align: right;
+  
+    
+}
+/* #Sales {
+    background-color: blue;
+}
+body{
+    color: brown;
+}
+ul{
+    color: darkred;
+}
+.highlights{
+
+color: cyan;
+}
+.data{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: crimson;
+}
+.text{
+font-family: 'Times New Roman', Times, serif;
+color: darkorchid;
+}*/
+
+table, tr, td{
+    border: solid black;
+    border-collapse: collapse;
+    text-align: center;
+    color: rgb(138, 42, 8);
+} 
