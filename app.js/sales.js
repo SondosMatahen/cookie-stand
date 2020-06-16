@@ -5,9 +5,11 @@ var parentElement =document.getElementById('Sales');
 var main = document.createElement('main');
 parentElement.appendChild(main);
 
+
+
 var table =document.createElement('table');
 main.appendChild(table);
-
+function header() {
 var tr=document.createElement('tr');
 table.appendChild(tr);
 
@@ -26,7 +28,7 @@ var td =document.createElement('td')
     }};
 var td=document.createElement('td');
 td.textContent='Daily Total';
-tr.appendChild(td);
+tr.appendChild(td);}
 
 var numLocation =[];
 var totalsinhour=[];
@@ -110,16 +112,8 @@ var Paris = new Location ('Paris',20,38,2.3);
 var Lima =new Location('Lima',2,16,4.6);
 
 
-
-for(var i=0 ; i<numLocation.length;i++) {
-    
-    numLocation[i].cusPerHour();
-    numLocation[i].cookiesForHour();
-    numLocation[i].render();
-   numLocation[i].totalInHour();
-}
  
-    
+function footer (){    
 var tr=document.createElement('tr');
 table.appendChild(tr);
 var td=document.createElement('td'); 
@@ -130,4 +124,16 @@ for (var i=1 ;i< totalsinhour.length ; i++){
     var td=document.createElement('td'); 
     td.textContent=totalsinhour[i];
     tr.appendChild(td);}
+}
 
+header();
+
+for(var i=0 ; i<numLocation.length;i++) {
+    
+    numLocation[i].cusPerHour();
+    numLocation[i].cookiesForHour();
+    numLocation[i].render();
+   numLocation[i].totalInHour();
+}
+
+footer ();
