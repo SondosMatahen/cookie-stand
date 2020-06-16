@@ -1,48 +1,99 @@
 body{
-    background-color: rgb(235, 188, 155);
+    background-color: rgb(199, 235, 247);
 }
 
-h1{
-    color: rgb(185, 14, 48);
-    position: relative;
-    left: 600px;
-}
-img{
-    width: 1000px;
-    height: 300px;
-   align-content: center;
-
-}
-a {
-    text-align: right;
-  
+#Sales header ,header{ 
+    z-index: 2;
+    background-color:  rgb(199, 235, 247);
+    position: fixed;
+    top: 0em;
+    width: 100%;
+    height: 130px;
+    font-size: 200%;
+    color: rgb(223, 66, 97);
+    text-align: center;
     
 }
-/* #Sales {
-    background-color: blue;
+   
+#first{
+    margin-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 4, 90);
+    font-size:150%;
+    font-weight: 800;
+    margin-left:50px;
+    width: 90%;
 }
-body{
-    color: brown;
+#second{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(114, 4, 90);
+    font-size:120%;
+    position: relative; 
+    font-weight: 800;
+    left:50px;
+    width: 90%;
 }
 ul{
-    color: darkred;
+    
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(114, 4, 90);
+    font-size: larger;
+    margin-left: 50px;
+  
 }
-.highlights{
+ul img{
+    float: right;
+    width: 40%;
+    
 
-color: cyan;
 }
-.data{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-color: crimson;
+li{
+    width: fit-content;
+    margin: 10px;
 }
-.text{
-font-family: 'Times New Roman', Times, serif;
-color: darkorchid;
-}*/
+#img1{
+    width: 49%;
+    height: 300px;
+   
+}
+#img2{
+    width: 24%;
+    height: 300px;
+   
+}
+div ,a {
+    color: rgb(204, 51, 171);
+    font-size:150%;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif; 
+    margin: 20px;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 120%;
+    position: relative;
+    bottom: 0px;
+    left: 90%;
+    
+}
 
+table{
+    position: relative;
+    top: 200px;
+    margin: auto;
+    
+
+}
 table, tr, td{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: solid black;
     border-collapse: collapse;
     text-align: center;
     color: rgb(138, 42, 8);
+}
+#Sales a{
+    position: relative;
+    top: 150px;
+  
 } 
