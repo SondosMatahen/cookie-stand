@@ -123,7 +123,7 @@ tr.appendChild(td)
 for (var i=1 ;i< totalsinhour.length ; i++){
     var td=document.createElement('td'); 
     td.textContent=totalsinhour[i];
-    tr.appendChild(td);}
+    tr.appendChild(td) ;}
 }
 
 header();
