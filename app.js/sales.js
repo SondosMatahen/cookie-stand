@@ -40,7 +40,7 @@ function Location (name, minHourlyCustomers, maxHourlyCustomers, averageCookiesP
     this.maxHourlyCustomers=maxHourlyCustomers;
     this.averageCookiesPerCustomer=averageCookiesPerCustomer;
     this.cookies = [];
-     numLocation.push(this);
+    numLocation.push(this);
    
 
 }
@@ -126,6 +126,7 @@ for (var i=1 ;i< totalsinhour.length ; i++){
     tr.appendChild(td) ;}
 }
 
+
 header();
 
 for(var i=0 ; i<numLocation.length;i++) {
@@ -133,7 +134,49 @@ for(var i=0 ; i<numLocation.length;i++) {
     numLocation[i].cusPerHour();
     numLocation[i].cookiesForHour();
     numLocation[i].render();
-   numLocation[i].totalInHour();
+    numLocation[i].totalInHour();
 }
 
+console.log(numLocation)
 footer ();
+
+
+var newlocation = document.getElementById("new-location");
+newlocation.addEventListener('submit', nlocation);
+
+function nlocation (event){
+    event.preventDefault();
+
+    var newlocationValue =event.target.locationname.value
+        console.log(newlocationValue);
+
+    var newMin =parseInt(event.target.minNum.value);
+        console.log(newMin);    
+
+    var newMax =parseInt(event.target.maxnNum.value);
+        console.log(newMax);
+
+    var newArg=parseFloat(event.target.argNum.value);
+        console.log(newArg);
+
+     
+
+    var userlocation=new Location(newlocationValue , newMin , newMax, newArg);
+
+    numLocation.push(userlocation);
+    userlocation.cusPerHour();
+    userlocation.cookiesForHour();
+    //userlocation.render();
+
+    
+    var rowcount = table.rows.length;
+
+    table.deleteRow(rowcount-1);
+    userlocation.render();
+    footer();
+
+}
+
+//locationname.addEventListener('submit', nlocation);
+
+
