@@ -2,7 +2,7 @@ body{
     background-color: rgb(199, 235, 247);
 }
 
-#Sales header ,header{ 
+/*#Sales header ,header{ 
     z-index: 2;
     background-color:  rgb(199, 235, 247);
     position: fixed;
@@ -14,7 +14,7 @@ body{
     text-align: center;
     
 }
-   
+ */  
 #first{
     margin-top: 150px;
     font-family: 'Times New Roman', Times, serif;
@@ -94,6 +94,22 @@ table, tr, td{
 }
 #Sales a{
     position: relative;
-    top: 150px;
+    z-index: 2;
   
 } 
+
+fieldset{
+    width: 40%;
+    border: solid rgb(86, 18, 196);
+    
+}
+
+label {
+    display: block;
+    margin: 5px;
+    color: mediumblue;
+
+}
+#submit{
+    float: right;
+}
