@@ -1,10 +1,16 @@
-body{
+body{ 
+    background-image: url(https://wallpaperstock.net/wallpapers/thumbs1/38473wide.jpg);
     background-color: rgb(199, 235, 247);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
-/*#Sales header ,header{ 
-    z-index: 2;
-    background-color:  rgb(199, 235, 247);
+#Sales header ,header { 
+    margin: 0px;
+    border: 0px;
+    background-color: blanchedalmond;
     position: fixed;
     top: 0em;
     width: 100%;
@@ -14,11 +20,11 @@ body{
     text-align: center;
     
 }
- */  
+   
 #first{
     margin-top: 150px;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(114, 4, 90);
+    color: rgb(221, 209, 218);
     font-size:150%;
     font-weight: 800;
     margin-left:50px;
@@ -26,7 +32,7 @@ body{
 }
 #second{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(114, 4, 90);
+    color: rgb(221, 209, 218);
     font-size:120%;
     position: relative; 
     font-weight: 800;
@@ -36,12 +42,13 @@ body{
 ul{
     
     font-family: 'Times New Roman', Times, serif;
-    color:rgb(114, 4, 90);
+    color:rgb(223, 99, 192);
     font-size: larger;
     margin-left: 50px;
   
 }
 ul img{
+    z-index: -1;
     float: right;
     width: 40%;
     
@@ -62,7 +69,7 @@ li{
    
 }
 div ,a {
-    color: rgb(204, 51, 171);
+    color: rgb(216, 8, 164);
     font-size:150%;
     text-align: center;
     font-family:'Times New Roman', Times, serif; 
@@ -80,7 +87,7 @@ footer{
 
 table{
     position: relative;
-    top: 200px;
+    top: 50px;
     margin: auto;
     
 
@@ -92,14 +99,12 @@ table, tr, td{
     text-align: center;
     color: rgb(138, 42, 8);
 }
-#Sales a{
-    position: relative;
-    z-index: 2;
-  
-} 
-
+ 
+form{
+    margin-top: 150px;
+}
 fieldset{
-    width: 40%;
+    width: 30%;
     border: solid rgb(86, 18, 196);
     
 }
@@ -112,4 +117,10 @@ label {
 }
 #submit{
     float: right;
+}
+#home{
+    position: relative;
+    z-index: 2;
+    top: 100px;
+    
 }
