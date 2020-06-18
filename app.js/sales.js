@@ -32,7 +32,7 @@ tr.appendChild(td);}
 
 var numLocation =[];
 var totalsinhour=[];
-console.log(totalsinhour)
+//console.log(totalsinhour)
 
 function Location (name, minHourlyCustomers, maxHourlyCustomers, averageCookiesPerCustomer) {
     this.name=name;
@@ -137,7 +137,7 @@ for(var i=0 ; i<numLocation.length;i++) {
     numLocation[i].totalInHour();
 }
 
-console.log(numLocation)
+
 footer ();
 
 
@@ -163,20 +163,25 @@ function nlocation (event){
 
     var userlocation=new Location(newlocationValue , newMin , newMax, newArg);
 
-    numLocation.push(userlocation);
+    //numLocation.push(userlocation);
     userlocation.cusPerHour();
     userlocation.cookiesForHour();
+    userlocation.totalInHour();
     //userlocation.render();
+    console.log(userlocation);
 
     
     var rowcount = table.rows.length;
+    console.log(rowcount)
+    //console.log(numLocation)
 
     table.deleteRow(rowcount-1);
+    console.log(rowcount)
     userlocation.render();
     footer();
 
 }
 
-//locationname.addEventListener('submit', nlocation);
+
 
 
