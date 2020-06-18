@@ -10,28 +10,33 @@ body{
 #Sales header ,header { 
     margin: 0px;
     border: 0px;
-    background-color: blanchedalmond;
+    background-color: burlywood;
     position: fixed;
     top: 0em;
     width: 100%;
-    height: 130px;
+    height: 150px;
     font-size: 200%;
     color: rgb(223, 66, 97);
     text-align: center;
-    
+    z-index: 1;
 }
+h1 {
+    
+    font-family: 'Playfair Display', serif;
+}   
    
 #first{
-    margin-top: 150px;
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(221, 209, 218);
+    margin-top: 170px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(223, 66, 97);
     font-size:150%;
     font-weight: 800;
     margin-left:50px;
     width: 90%;
+    margin-bottom: 50px;
 }
 #second{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
     color: rgb(221, 209, 218);
     font-size:120%;
     position: relative; 
@@ -41,10 +46,11 @@ body{
 }
 ul{
     
-    font-family: 'Times New Roman', Times, serif;
-    color:rgb(223, 99, 192);
+    font-family: 'Playfair Display', serif;
+    color: rgb(230, 223, 225);
     font-size: larger;
     margin-left: 50px;
+    font-weight: 700;
   
 }
 ul img{
@@ -58,23 +64,54 @@ li{
     width: fit-content;
     margin: 10px;
 }
-#img1{
-    width: 49%;
+#img{
+    align-content: center;
+    margin: 30px;
+    width: 44%;
     height: 300px;
+    border-radius: 2rem;
+    
+    
+   
+}
+#img1{
+    align-content: center;
+    margin: 30px;
+    width: 44%;
+    height: 300px;
+    border-radius: 2rem;
+    border:solid  rgb(22, 54, 141);
+    
    
 }
 #img2{
-    width: 24%;
+   border-radius: 2rem;
+    border:solid  rgb(22, 54, 141);
+    width: 22%;
+    margin-left: 20px;
     height: 300px;
+    margin-right: 15px;
    
 }
-div ,a {
+div  {
     color: rgb(216, 8, 164);
     font-size:150%;
     text-align: center;
     font-family:'Times New Roman', Times, serif; 
     margin: 20px;
 }
+#link ,#link1{ 
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+    left: 50px;
+    font-size: 200%;
+    margin-left: 30px;
+}
+#link1{
+    margin-left: 200px;
+}
+
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
@@ -86,41 +123,40 @@ footer{
 }
 
 table{
+    background-color: rgb(119, 104, 104);
     position: relative;
-    top: 50px;
+    top: 70px;
     margin: auto;
     
 
 }
 table, tr, td{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: solid black;
+    
+    font-family: 'Playfair Display', serif;
+    border: solid rgb(238, 99, 99);
     border-collapse: collapse;
     text-align: center;
-    color: rgb(138, 42, 8);
+    color: rgb(212, 199, 194);
 }
  
 form{
     margin-top: 150px;
 }
 fieldset{
+    border-radius: 2rem;
+    margin-left: 50px;
     width: 30%;
-    border: solid rgb(86, 18, 196);
+    border: solid rgb(202, 174, 248);
     
 }
 
 label {
+    font-family: 'Playfair Display', serif;
     display: block;
     margin: 5px;
-    color: mediumblue;
+    color: rgb(243, 127, 214);
 
 }
 #submit{
     float: right;
-}
-#home{
-    position: relative;
-    z-index: 2;
-    top: 100px;
-    
 }
